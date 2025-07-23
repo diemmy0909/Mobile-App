@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="4dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="center_horizontal">
+
+        <!-- Ảnh sản phẩm -->
+        <ImageView
+            android:id="@+id/wish_imgProduct"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="Ảnh sản phẩm" />
+
+        <!-- Tên sản phẩm -->
+        <TextView
+            android:id="@+id/wish_productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginTop="8dp" />
+
+        <!-- Mô tả -->
+        <TextView
+            android:id="@+id/wish_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả sản phẩm"
+            android:textSize="13sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="#666666"
+            android:layout_marginTop="2dp" />
+
+        <!-- Giá -->
+        <TextView
+            android:id="@+id/wish_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120.000 đ"
+            android:textColor="#E53935"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp" />
+
+        <!-- Số lượng -->
+        <TextView
+            android:id="@+id/wish_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SL: 5"
+            android:textSize="13sp"
+            android:textColor="#555555"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- PHẦN ẢNH HEADER (Ảnh lớn trên cùng) -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="#FFE5E5"
+            android:padding="16dp"
+            android:layout_marginTop="48dp"> <!-- ✅ thêm dòng này để hạ xuống -->
+
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/kem_sau_rieng"
+                android:background="@drawable/bg_card"
+                android:layout_gravity="center"
+                android:elevation="6dp" />
+        </FrameLayout>
+
+
+        <!-- PHẦN THÔNG TIN CHI TIẾT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="#FFF5F8">
+
+            <TextView
+                android:id="@+id/detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120000 đ"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#F44336"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chocolate Cake"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/detail_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mô tả sản phẩm chi tiết..."
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/detail_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kho: 3"
+                android:textSize="14sp"
+                android:textColor="#777777"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Bộ chọn số lượng -->
+            <LinearLayout
+                android:id="@+id/quantity_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/btn_decrease"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="-"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#FFCDD2"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/txt_quantity"
+                    android:layout_width="48dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:background="#F5F5F5"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:elevation="1dp" />
+
+                <Button
+                    android:id="@+id/btn_increase"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="+"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#FFCDD2"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Nút thêm vào giỏ -->
+            <Button
+                android:id="@+id/btn_add_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Thêm vào giỏ hàng"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#FF4081"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

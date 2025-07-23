@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="Thanh toán thành công"
+        android:fontFamily="@font/montserratbold"
+        android:textSize="25dp"
+        android:textColor="#55B41A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:src="@drawable/banner1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_marginTop="20dp"
+        android:text="Thoát"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:fontFamily="@font/montserratbold"
+        android:textSize="20dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

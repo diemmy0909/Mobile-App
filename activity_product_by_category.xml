@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9FC"> <!-- nền hồng nhạt nhẹ -->
+
+    <LinearLayout
+        android:id="@+id/productByCategoryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal">
+
+        <!-- ✅ View khoảng trắng đầu danh sách -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <!-- ✅ Tiêu đề -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:paddingTop="100dp"
+            android:text="Danh sách sản phẩm"
+            android:textColor="#444444"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- ⚠️ Các item_product sẽ được add bằng code -->
+
+    </LinearLayout>
+</ScrollView>
